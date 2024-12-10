@@ -114,4 +114,8 @@ export class AppComponent implements OnInit {
   goProducts() {
     this.router.navigate(["products"]);
   }
+
+  goAdminProducts(){
+    this.router.navigate(["adminProducts"])
+  }
 }

@@ -22,6 +22,7 @@ import { RequestShippingComponent } from './pages/request-shipping/request-shipp
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { AdminProductsComponent } from './pages/admin-products/admin-products.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -43,7 +44,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     RequestListComponent,
     ProductsComponent,
     ControlPanelComponent,
-    RequestShippingComponent
+    RequestShippingComponent,
+    AdminProductsComponent
   ],
   imports: [
     BrowserModule,
