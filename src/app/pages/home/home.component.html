@@ -9,9 +9,9 @@
       <div>
           <h2><b>Conoce nuestros procesos</b></h2>
           <div class="mt-3 row text-center">
-              <div class="col contain">Trámites Digitales</div>
-              <div class="col contain">Centro de ayuda</div>
-              <div class="col contain">Certificados Bancarios</div>
+              <div class="col contain" (click)="showAlert()">Trámites Digitales</div>
+              <div class="col contain" (click)="showAlert()">Centro de ayuda</div>
+              <div class="col contain" (click)="showAlert()">Certificados Bancarios</div>
           </div>
       </div>
   </div>
@@ -20,17 +20,17 @@
   <div class="row text-center">
       <div class="col-4">
           <div class="f-title">Acerca de nosotros</div>
-          <div class="f-comp">¿Quienes somos?</div>
-          <div class="f-comp">¿Qué hacemos?</div>
-          <div class="f-comp">Visión</div>
-          <div class="f-comp">Misión</div>
+          <div class="f-comp" (click)="goContact()">¿Quienes somos?</div>
+          <div class="f-comp" (click)="goContact()">¿Qué hacemos?</div>
+          <div class="f-comp" (click)="goContact()">Visión</div>
+          <div class="f-comp" (click)="goContact()">Misión</div>
       </div>
       <div class="col-4">
           <div class="f-title">Contactanos</div>
-          <div class="f-comp">Sucursales</div>
-          <div class="f-comp">Entidades</div>
-          <div class="f-comp">+ 57 11111111</div>
-          <div class="f-comp">01800 111111</div>
+          <div class="f-comp" (click)="goContact()">Sucursales</div>
+          <div class="f-comp" (click)="goContact()">Entidades</div>
+          <div class="f-comp" (click)="goContact()">+ 57 11111111</div>
+          <div class="f-comp" (click)="goContact()">01800 111111</div>
       </div>
       <div class="col-4">
           <div class="f-title">Información Banco</div>

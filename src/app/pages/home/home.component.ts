@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LanguageService } from 'src/app/services/language.service';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-home',
@@ -8,5 +8,46 @@ import { LanguageService } from 'src/app/services/language.service';
     standalone: false
 })
 export class HomeComponent {
-    constructor(public languageService: LanguageService){}
+
+    constructor( private router:Router){
+    }
+
+    showAlert() {
+        alert('En producción');
+      }
+      goRequest() {
+        this.router.navigate(["requestProduct"]);
+      }
+    
+      goContact() {
+        this.router.navigate(["contactUs"]);
+      }
+    
+      goRegister() {
+        this.router.navigate(["register"]);
+      }
+    
+      goForgotPassword() {
+        this.router.navigate(["forgotPassword"]);
+      }
+    
+      goUser() {
+        this.router.navigate(["users"]);
+      }
+    
+      goMovements() {
+        this.router.navigate(["movements"]);
+      }
+    
+      goManageUsers() {
+        this.router.navigate(["manage-users"]);
+      }
+    
+      goRequests() {
+        this.router.navigate(["requests"]);
+      }
+    
+      goProducts() {
+        this.router.navigate(["products"]);
+      }
 }
