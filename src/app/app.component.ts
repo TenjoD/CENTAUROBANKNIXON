@@ -1,7 +1,7 @@
+// app.component.ts
 import { Component, OnInit } from '@angular/core';
 import { GlobalService } from './services/global.service';
 import { Router } from '@angular/router';
-import { LanguageService } from './services/language.service';
 import { TranslateService } from '@ngx-translate/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
@@ -25,27 +25,29 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if(this.translate.currentLang == 'es'){
+    // Muestra el snackbar si el idioma es español
+    if (this.translate.currentLang === 'es') {
       const snack = this.snackbar.open('Do you want to translate this page?', 'Yes', {
         duration: 5000
       });
       snack.onAction().subscribe(() => {
-        this.changeLanguage('en')
-      })
+        this.changeLanguage('en');
+      });
     } else {
       const snack = this.snackbar.open('Do you want to translate this page?', 'Yes', {
         duration: 5000
       });
       snack.onAction().subscribe(() => {
-        this.changeLanguage('es')
-      })
+        this.changeLanguage('es');
+      });
     }
   }
 
-  changeLanguage(lang: string){
-    this.translate.use(lang)
+  changeLanguage(lang: string) {
+    this.translate.use(lang);
   }
 
+  // Redirección a páginas específicas
   goRequestShipping() {
     this.router.navigate(["requestShipping"]);
   }
@@ -63,8 +65,8 @@ export class AppComponent implements OnInit {
   }
 
   logOut() {
-    this.router.navigate(["login"]);
-    this.globalService.setGlobalVariable("");
+    this.globalService.setGlobalVariable(""); // Borra el estado del usuario
+    this.router.navigate(["login"]); // Redirige al login
   }
 
   goHome() {
@@ -115,7 +117,7 @@ export class AppComponent implements OnInit {
     this.router.navigate(["products"]);
   }
 
-  goAdminProducts(){
-    this.router.navigate(["adminProducts"])
+  goAdminProducts() {
+    this.router.navigate(["adminProducts"]);
   }
 }

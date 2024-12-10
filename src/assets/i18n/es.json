@@ -6,10 +6,10 @@
   "REQUEST_PRODUCTS": "Solicitud de Productos",
   "MOVEMENTS": "Movimientos",
   "REQUEST_SHIPPING": "Solicitud de Envío",
-  "MANAGE_PRODUCTS": "Administración<br>Productos",
-  "MANAGE_USERS": "Administración<br>Usuarios",
-  "REQUEST_LIST": "Lista de<br>Solicitudes",
-  "CONTROL_PANEL": "Panel de<br>Control",
+  "MANAGE_PRODUCTS": "Administración Productos",
+  "MANAGE_USERS": "Administración Usuarios",
+  "REQUEST_LIST": "Lista de Solicitudes",
+  "CONTROL_PANEL": "Panel deControl",
   "LOGIN": "Entrar",
   "LOGOUT": "Salir",
   "TITLE": "CONOCE NUESTROS PRODUCTOS Y AHORRA DE LA MEJOR MANERA",
@@ -29,5 +29,162 @@
   "BANK_INFO": "Información Banco",
   "SERVICES": "Nuestros servicios",
   "BENEFITS": "Beneficios",
-  "WORK_WITH_US": "Trabaja con nosotros"
+  "WORK_WITH_US": "Trabaja con nosotros",
+
+  "WELCOME TO": "BIENVENID@ A CONTACTANOS",
+  "CC COLINA": "Centro Comercial Parque la Colina",
+  "CC CM": "Centro Comercial Centro Mayor",
+  "INVESTMENT": "Inversión CENTAURO",
+  "CDT": "CDT CENTAURO",
+  "CELL_PHONE": "Telefonos",
+
+  "WELCOME": "Bienvenido",
+  "SELECT ROL": "Selecciona tu rol",
+  "ADMIN": "Administrador",
+  "USER": "Usuario",
+
+  "ENTER": "INGRESAR",
+  "USER LOGIN": "USUARIO",
+  "PASSWORD": "CONTRASEÑA",
+  "FORGOT PASSWORD": "¿Olvidaste tu contraseña?",
+  "REGISTER": "Registrate",
+
+  "ENTER EMAIL": "Digite su correo",
+  "EMAIL": "Email",
+  "BACK": "VOLVER",
+
+  "CREDENTIALS INCORRECT": "Usuario o contraseña incorrectos",
+  "RETRY": "Volver a intentar",
+
+  "RESGISTRATION": "Registro",
+  "NAMES": "Nombres",
+  "LASTNAMES": "Apellidos",
+  "DATE OF BIRTH": "Fecha de nacimiento",
+  "DOCUMENT": "Documento",
+  "ADDRESS": "Dirección",
+  "MAIL": "Correo electrónico",
+  "PASSWORDD": "Contraseña",
+  "PHONE USER": "Telefono",
+
+  "PRODUCT BALANCE": "Saldo Productos",
+  "SHORTCUTS": "Accesos rápidos",
+  "PAY PRODUCTS": "Pagar productos",
+  "ALERTS": "Alertas",
+
+  "PRODUCT REQUEST": "Solicitud de productos",
+  "SELECT PRODUCT": "Seleccione el producto que desea solicitar",
+  "CREDIT CARD": "Tarjeta de crédito",
+  "YOUR INFORMATION": "Ingrese su información",
+  "ISSUE DOCUMENT": "Fecha expedición documento",
+  "DOCUMENT NUMBER": "Número de documento",
+  "ATTACH DOCUMENT": "Debe adjuntar  un PDF  donde se evidencia su documento de identidad por ambos lados, asegurese de que sea claro",
+  "ATTACH ECONOMIC DOCUMENT": "ADJUNTAR DOCUMENTOS DE RELPADO ECONÓMICO: Debe adjuntar documentos que respalden económicamente su solicitud, asegurese de que sean claros",
+  "ONLY 1": "*Solamente 1*",
+  "MAX 5": "*Mínimo 1, máximo 5*",
+  "SUBMIT": "Enviar",
+  "CANCEL": "CANCELAR",
+  "ATTACH IMAGE": "Adjunte la imagen",
+  "SEND MESSAGE": "Formulario enviado con éxito, por favor revise su correo para validar el envio de este y este pendiente para la respuesta de su solicitud, siga las instrucciones que se le indican allí.",
+
+  "SHIPPING REQUEST": "Solicitud de envio",
+  "ALREADY ENABLED": "Seleccione el producto YA HABILITADO",
+  "SHIPPING INFO": "Ingrese su información de envio",
+  "FULL NAME": "Nombre completo",
+  "WHO SHIPPING": "¿Quién recibe el envio?",
+
+  "PRODUCT MANAGEMENT": "Administración de productos",
+  "SELECT PROCESS": "Selecciona el proceso que deseas realizar",
+  "PRODUCT NAME": "Nombre del producto",
+  "IMAGE": "Imagen",
+  "DESCRIPTION": "Descripción",
+  "ADVANTAGES": "Ventajas",
+  "CREATE": "CREAR",
+  "EDIT": "EDITAR",
+  "DELETE": "ELIMINAR",
+
+  "USER ADMINISTRATION": "Administración de Usuarios",
+  "REQUESTS LIST": "Lista de solicitudes",
+  "TOTAL CUSTOMERS": "Clientes totales",
+  "PRODUCTS MONTH": "Productos por mes",
+  "SELECT MONTH": "Selecciona un mes",
+
+  "ADD CARD": "Agrega una nueva tarjeta de Centauro Bank",
+  "ADD": "Agregar",
+  "PRODUCTS LIST": "Lista de productos",
+
+  "TRANSACTION": "Transacción",
+  "DATE": "Fecha",
+  "AMOUNT": "Monto",
+  "PRODUCT DESTINATION": "Producto Destino",
+
+  "TARJETA_AZUL": "Tarjeta Débito de Centauro Bank",
+  "TARJETA_NEGRA": "Tarjeta Black Débito de Centauro Bank",
+  "TARJETA_VERDE": "Tarjeta Débito de Centauro Bank con funcionalidad de Transporte",
+  "TARJETA_DORADA": "Tarjeta Débito de Centauro Bank para menores",
+  "TARJETA_ROJA": "Tarjeta Débito de Centauro Bank",
+  "TARJETA_NARANJA": "Tarjeta Débito de Centauro Bank",
+  "PAGOS_AGILES": "Pagos más ágiles, seguros, cómodos y sin costos adicionales.",
+  "PRAC_EXCLUSIVA": "Practicidad en el pago y exclusividad para los usuarios de Centauro Bank.",
+  "FUNCIONALIDAD_TRANSPORTE": "Con la Tarjeta Débito con funcionalidad de Transporte ingresas al transporte masivo.",
+  "MENOR_EDAD": "Esta tarjeta es para los menores de edad de 13-17 años para que aprendas y ahorres.",
+  "ALERT_PRODUCT_EDITED": "Producto editado",
+  "ALERT_PRODUCT_DELETED": "Producto eliminado",
+  "ALERT_IN_PRODUCTION": "En producción",
+
+  "TYPE OF REQUEST": "Tipo de Solicitud",
+  "VIEW REQUEST": "Ver Solicitud",
+  "ACTIONS": "Acciones",
+  "ACCEPT":"Aceptar",
+  "DELETED":"Eliminar",
+  "UPDATE":"Actualizar",
+
+  "OTHER PRODUCT":"Otro Producto",
+  "ATTACH DOCUMENTCC":"Adjuntar Documento",
+  "EMAIL VALIDATION":"Validación Correo Electrónico",
+  "TYPE OF DOCUMENT":"Tipo de documento",
+  "CITIZENSHIP CARD":"Cédula de ciudadanía",
+  "ALIEN REGISTRATION":"Cédula de Extranjería",
+  "ATTACH DOCUMENT ECONOMIC":"Adjuntar Documentos Económicos",
+
+  "FORM_SUBMIT_SUCCESS": "Formulario enviado con éxito, por favor revise su correo para validar el envío de este y esté pendiente para la respuesta de su solicitud, siga las instrucciones que se le indican allí",
+  "CLOSE": "Cerrar",
+
+  "MONTHS": [
+    "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+  ],
+  "BAR_CHART_LABELS": [
+    "Tarjeta Débito de Centauro Bank", 
+    "Tarjeta Black Débito de Centauro Bank", 
+    "Tarjeta Débito de Centauro Bank con funcionalidad de Transporte", 
+    "Tarjeta Débito de Centauro Bank", 
+    "Tarjeta Débito de Centauro Bank", 
+    "Tarjeta Débito de Centauro Bank"
+  ],
+  "CLIENTS": "Clientes",
+  "AMOUNT_OF_CLIENTS": "Cantidad de Clientes",
+  "EMAIL_SENT": "Correo enviado para restablecer su contraseña",
+
+  "SNACKBAR": {
+    "ENTER_USERNAME_PASSWORD": "Por favor introduzca un usuario y contraseña para continuar.",
+    "ENTER_USERNAME": "Por favor introduzca su usuario.",
+    "ENTER_PASSWORD": "Por favor introduzca su contraseña.",
+    "LOGIN_SUCCESSFUL": "Login exitoso."
+  },
+
+  "FORM_SUBMITTED": "Formulario enviado con éxito, por favor revise su correo para validar el envío de este y esté pendiente para la respuesta de su solicitud, siga las instrucciones que se le indican allí.",
+
+  "UPDATE_REQUEST": "Actualizar solicitud del usuario {user}",
+    "DELETE_REQUEST": "Solicitud del usuario {user} eliminada",
+     "USER_REGISTERED": "Usuario Registrado",
+     "PLEASE_COMPLETE_FIELDS": "Por favor complete todos los campos correctamente.",
+     "ALERT_IN_REQUEST": "Debe iniciar sesión para poder adquerir este producto",
+
+  "LOG": {
+    "PRODUCT_CREATED": "Producto creado:",
+    "EDIT_PRODUCT": "Editar producto:",
+    "PRODUCT_DELETED": "Producto eliminado",
+    "CANCEL_ACTION": "Acción cancelada",
+    "FILE_SELECTED": "Archivo seleccionado:"
+  }
+ 
 }

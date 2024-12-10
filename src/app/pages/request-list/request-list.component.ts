@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatTableDataSource } from '@angular/material/table';
+import { TranslateService } from '@ngx-translate/core';
 import { Request } from 'src/app/interfaces/request.interface';
 import { User } from 'src/app/interfaces/user.interface';
 import { LanguageService } from 'src/app/services/language.service';
@@ -14,7 +15,7 @@ import { LanguageService } from 'src/app/services/language.service';
 })
 export class RequestListComponent {
   constructor(private snackbar: MatSnackBar,
-    public languageService: LanguageService
+    private translate:TranslateService
   ){}
 
   displayedColumns: string[] = ['usuario', 'tipoDeSolicitud', 'verSolicitud', 'acciones'];
@@ -38,19 +39,19 @@ export class RequestListComponent {
   }
 
   actualizarSolicitud(req: Request): void {
-    this.snackbar.open(`Actualizar solicitud del usuario ${req.usuario}`, 'Cerrar', {
+    this.snackbar.open(this.translate.instant('SNACKBAR.UPDATE_REQUEST', { user: req.usuario }), 'Cerrar', {
       duration: 3000
-    })
+    });
   }
-
+  
   eliminarSolicitud(req: Request): void {
     const index = this.dataSource.data.indexOf(req);
     if (index >= 0) {
       this.dataSource.data.splice(index, 1);
       this.dataSource.data = [...this.dataSource.data];
-      this.snackbar.open(`Solicitud del usuario ${req.usuario} eliminada`, 'Cerrar', {
+      this.snackbar.open(this.translate.instant('SNACKBAR.DELETE_REQUEST', { user: req.usuario }), 'Cerrar', {
         duration: 3000
-      })
+      });
     }
   }
 }

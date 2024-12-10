@@ -1,16 +1,16 @@
 <div class="container">
 
-    <h2>Movimientos</h2>
+    <h2>{{ 'MOVEMENTS' | translate }}</h2>
   
 
     <div class="table-container">
       <table>
         <thead>
           <tr>
-            <th>Transacción</th>
-            <th>Fecha</th>
-            <th>Monto</th>
-            <th>Producto Destino</th>
+            <th>{{ 'TRANSACTION' | translate }}</th>
+            <th>{{ 'DATE' | translate }}</th>
+            <th>{{ 'AMOUNT' | translate }}</th>
+            <th>{{ 'PRODUCT DESTINATION' | translate }}</th>
           </tr>
         </thead>
         <tbody>
@@ -27,6 +27,6 @@
         </tbody>
       </table>
 
-    <button clastype="button" (click)="goBack()">Volver</button>
+    <button clastype="button" (click)="goBack()">{{ 'BACK' | translate }}</button>
   </div>
   

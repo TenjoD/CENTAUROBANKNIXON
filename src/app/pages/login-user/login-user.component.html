@@ -1,25 +1,25 @@
 <div class="login-container">
-    <h2>Iniciar Sesión</h2>
+    <h2>{{ 'ENTER' | translate }}</h2>
     <form (ngSubmit)="onSubmit()">
       <mat-form-field appearance="fill" class="full-width">
-        <mat-label>Usuario</mat-label>
+        <mat-label>{{ 'USER' | translate }}</mat-label>
         <input matInput type="text" [(ngModel)]="loginData.username" name="username" required />
       </mat-form-field>
   
       <mat-form-field appearance="fill" class="full-width">
-        <mat-label>Contraseña</mat-label>
+        <mat-label>{{ 'PASSWORDD' | translate }}</mat-label>
         <input matInput type="password" [(ngModel)]="loginData.password" name="password" required />
       </mat-form-field>
-      <div class="text-center"><button mat-raised-button color="primary" type="submit">Iniciar Sesión</button></div>
+      <div class="text-center"><button mat-raised-button color="primary" type="submit">{{ 'ENTER' | translate }}</button></div>
       
     </form>
   
     <div class="links">
-      <a routerLink="/forgotPassword" (click)="onForgotPassword()">¿Olvidaste tu contraseña?</a>
-      <a routerLink="/register" (click)="goRegister()">Registrarse</a>
+      <a routerLink="/forgotPassword" (click)="onForgotPassword()">{{ 'FORGOT PASSWORD' | translate }}</a>
+      <a routerLink="/register" (click)="goRegister()">{{ 'REGISTER' | translate }}</a>
     </div>
   </div>
   <div class="text-center">
-    <button mat-stroked-button color="primary" (click)="goLogin()">Volver</button>
+    <button mat-stroked-button color="primary" (click)="goLogin()">{{ 'BACK' | translate }}</button>
   </div>
   

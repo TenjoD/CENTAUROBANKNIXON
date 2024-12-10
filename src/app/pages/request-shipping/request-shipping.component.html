@@ -1,18 +1,18 @@
 <div class="form-container">
-    <h1>Solicitud de envio</h1>
-    <p>Seleccione el producto YA HABILITADO </p>
+    <h1>{{ 'SHIPPING REQUEST' | translate }}</h1>
+    <p>{{ 'ALREADY ENABLED' | translate }} </p>
     <br>
     <select name="producto" class="form-select">
       <option value="Tarjeta de Crédito">----------</option>
-      <option value="Otro Producto">Tarjeta de Crédito</option>
+      <option value="Otro Producto">{{ 'CREDIT CARD' | translate }}</option>
     </select>
     <br>
-    <p>Ingrese su información de envio:</p>
+    <p>{{ 'SHIPPING INFO' | translate }}</p>
   
     <form [formGroup]="solicitudForm" (ngSubmit)="onSubmit()">
       <div class="form-row">
         <div class="form-column">
-          <label for="nombres">Nombre Completo:</label>
+          <label for="nombres">{{ 'FULL NAME'| translate }}</label>
           <input
             id="nombres"
             type="text"
@@ -20,37 +20,37 @@
             placeholder="Ingrese sus nombres"
           />
   
-          <label for="correo">Correo Electrónico:</label>
+          <label for="correo">{{ 'MAIL' | translate }}</label>
           <input
             id="correo"
             type="email"
             formControlName="correo"
             placeholder="ejemplo@correo.com"
           />
-          <label for="nombreEnvio">¿Quién recibe el envio?</label>
+          <label for="nombreEnvio">{{ 'WHO SHIPPING' | translate }}</label>
           <input id="nombreEnvio" type="text" formControlName="nombreEnvio" multiple />
   
         </div>
   
         <div class="form-column">
 
-          <label for="documento">Numero de documento:</label>
+          <label for="documento">{{ 'DOCUMENT NUMBER' | translate }}</label>
           <input id="docuemnto" type="number" formControlName="documento" />
   
           
   
-          <label for="celular">Celular:</label>
+          <label for="celular">{{ 'PHONE USER' | translate }}</label>
           <input id="celular" type="tel" formControlName="celular" />
   
-          <label for="direccion">Dirección</label>
+          <label for="direccion">{{ 'ADDRESS' | translate }}</label>
           <input id="direccion" type="text" formControlName="direccion" multiple />
           <br>
         </div>
       </div>
   
       <div class="form-buttons">
-        <button type="submit" [disabled]="solicitudForm.invalid">Enviar</button>
-        <button type="button" (click)="onCancel()">Cancelar</button>
+        <button type="submit" [disabled]="solicitudForm.invalid">{{ 'SUBMIT' | translate }}</button>
+        <button type="button" (click)="onCancel()">{{ 'CANCEL' | translate }}</button>
       </div>
     </form>
   </div>

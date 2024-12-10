@@ -23,6 +23,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AdminProductsComponent } from './pages/admin-products/admin-products.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -45,7 +46,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ProductsComponent,
     ControlPanelComponent,
     RequestShippingComponent,
-    AdminProductsComponent
+    AdminProductsComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

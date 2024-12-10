@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/services/language.service';
 
 @Component({
@@ -14,7 +15,7 @@ export class ManageProductsComponent {
   selectedProcess: string = 'Crear';
 
   constructor(private fb: FormBuilder,
-    public languageService: LanguageService
+    private translate : TranslateService
   ) {
     this.productForm = this.fb.group({
       productName: ['', Validators.required],
@@ -25,26 +26,28 @@ export class ManageProductsComponent {
 
   onSubmit() {
     if (this.selectedProcess === 'Crear') {
-      console.log('Producto creado:', this.productForm.value);
+      console.log(this.translate.instant('LOG.PRODUCT_CREATED'), this.productForm.value);
     }
   }
-
+  
   editProduct() {
-    console.log('Editar producto:', this.productForm.value);
+    console.log(this.translate.instant('LOG.EDIT_PRODUCT'), this.productForm.value);
   }
-
+  
   deleteProduct() {
-    console.log('Producto eliminado');
+    console.log(this.translate.instant('LOG.PRODUCT_DELETED'));
   }
-
+  
   cancel() {
     this.productForm.reset();
+    console.log(this.translate.instant('LOG.CANCEL_ACTION'));
   }
-
+  
   onFileSelect(event: Event) {
     const input = event.target as HTMLInputElement;
     if (input.files && input.files[0]) {
-      console.log('Archivo seleccionado:', input.files[0]);
-    }
-  }
+      console.log(this.translate.instant('LOG.FILE_SELECTED'), input.files[0]);
+    }
+  }
+  
 }

@@ -8,9 +8,9 @@
         <div>
             <h2><b>{{ 'SUBTITLE' | translate }}</b></h2>
             <div class="mt-3 row text-center">
-                <div class="col contain">{{ 'DIGITAL_PROCEDURES' | translate }}</div>
-                <div class="col contain">{{ 'HELP_CENTER' | translate }}</div>
-                <div class="col contain">{{ 'BANK_CERTIFICATES' | translate }}</div>
+                <div class="col contain" (click)="showAlert()">{{ 'DIGITAL_PROCEDURES' | translate }}</div>
+                <div class="col contain" (click)="showAlert()">{{ 'HELP_CENTER' | translate }}</div>
+                <div class="col contain" (click)="showAlert()">{{ 'BANK_CERTIFICATES' | translate }}</div>
             </div>
         </div>
     </div>
@@ -19,24 +19,24 @@
     <div class="row text-center">
         <div class="col-4">
             <div class="f-title">{{ 'ABOUT_US' | translate }}</div>
-            <div class="f-comp">{{ 'WHO_WE_ARE' | translate }}</div>
-            <div class="f-comp">{{ 'WHAT_WE_DO' | translate }}</div>
-            <div class="f-comp">{{ 'VISION' | translate }}</div>
-            <div class="f-comp">{{ 'MISSION' | translate }}</div>
+            <div class="f-comp" (click)="goContact()">{{ 'WHO_WE_ARE' | translate }}</div>
+            <div class="f-comp" (click)="goContact()">{{ 'WHAT_WE_DO' | translate }}</div>
+            <div class="f-comp" (click)="goContact()">{{ 'VISION' | translate }}</div>
+            <div class="f-comp" (click)="goContact()">{{ 'MISSION' | translate }}</div>
         </div>
         <div class="col-4">
             <div class="f-title">{{ 'CONTACT_US' | translate }}</div>
-            <div class="f-comp">{{ 'BRANCHES' | translate }}</div>
-            <div class="f-comp">{{ 'ENTITIES' | translate }}</div>
-            <div class="f-comp">{{ 'PHONE' | translate }}</div>
-            <div class="f-comp">{{ 'TOLL_FREE' | translate }}</div>
+            <div class="f-comp" (click)="goContact()">{{ 'BRANCHES' | translate }}</div>
+            <div class="f-comp" (click)="goContact()">{{ 'ENTITIES' | translate }}</div>
+            <div class="f-comp" (click)="goContact()">{{ 'PHONE' | translate }}</div>
+            <div class="f-comp" (click)="goContact()">{{ 'TOLL_FREE' | translate }}</div>
         </div>
         <div class="col-4">
             <div class="f-title">{{ 'BANK_INFO' | translate }}</div>
-            <div class="f-comp">{{ 'PRODUCTS' | translate }}</div>
-            <div class="f-comp">{{ 'SERVICES' | translate }}</div>
-            <div class="f-comp">{{ 'BENEFITS' | translate }}</div>
-            <div class="f-comp">{{ 'WORK_WITH_US' | translate }}</div>
+            <div class="f-comp" (click)="goProducts()">{{ 'PRODUCTS' | translate }}</div>
+            <div class="f-comp" (click)="goProducts()">{{ 'SERVICES' | translate }}</div>
+            <div class="f-comp" (click)="goProducts()">{{ 'BENEFITS' | translate }}</div>
+            <div class="f-comp" (click)="goProducts()">{{ 'WORK_WITH_US' | translate }}</div>
         </div>
     </div>
   </footer>

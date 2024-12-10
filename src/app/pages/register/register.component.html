@@ -1,36 +1,36 @@
 <div class="form-container">
-    <h1>Registro</h1>
+    <h1>{{ 'REGISTRATION' | translate }}</h1>
     <form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
-        <label for="nombres">Nombres:</label>
+        <label for="nombres">{{ 'NAMES' | translate }}</label>
         <input type="text" id="nombres" formControlName="nombres" required>
       </div>
       <div class="form-group">
-        <label for="apellidos">Apellidos:</label>
+        <label for="apellidos">{{ 'LASTNAMES' | translate }}</label>
         <input type="text" id="apellidos" formControlName="apellidos" required>
       </div>
       <div class="form-group">
-        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <label for="fechaNacimiento">{{ 'DATE OF BIRTH' | translate }}</label>
         <input type="date" id="fechaNacimiento" formControlName="fechaNacimiento" required>
       </div>
       <div class="form-group">
-        <label for="documento">Documento:</label>
+        <label for="documento">{{ 'DOCUMENT' | translate }}</label>
         <input type="text" id="documento" formControlName="documento" required>
       </div>
       <div class="form-group">
-        <label for="telefono">Teléfono:</label>
+        <label for="telefono">{{ 'PHONE USER' | translate }}</label>
         <input type="tel" id="telefono" formControlName="telefono" required>
       </div>
       <div class="form-group">
-        <label for="correo">Correo:</label>
+        <label for="correo">{{ 'MAIL' | translate }}</label>
         <input type="email" id="correo" formControlName="correo" required>
       </div>
       <div class="form-group">
-        <label for="contrasena">Contraseña:</label>
+        <label for="contrasena">{{ 'PASSWORDD' | translate }}</label>
         <input type="password" id="contrasena" formControlName="contrasena" required>
       </div>
-      <button type="button" (click)="goBack()">Volver</button>
-      <button type="submit" [disabled]="!registroForm.valid">Registrar</button>
+      <button type="button" (click)="goBack()">{{ 'BACK' | translate }}</button>
+      <button type="submit" [disabled]="!registroForm.valid">{{ 'REGISTER' | translate }}</button>
     </form>
   </div>
   

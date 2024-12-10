@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/services/language.service';
 
 @Component({
@@ -14,7 +15,7 @@ export class RequestProductsComponent {
 
   constructor(private fb: FormBuilder,
     private snackbar: MatSnackBar,
-    public languageService: LanguageService
+    private translate:TranslateService
 
   )
    {
@@ -34,11 +35,11 @@ export class RequestProductsComponent {
     });
   }
 
-  onSubmit() {
+  onSubmit(): void {
     if (this.solicitudForm.valid) {
-      this.snackbar.open('Formulario enviado con éxito, por favor revise su correo para validar el envio de este y este pendiente para la respuesta de su solicitud, siga las instrucciones que se le indican allí', 'Cerrar', {
+      this.snackbar.open(this.translate.instant('SNACKBAR.FORM_SUBMITTED'), 'Cerrar', {
         duration: 3000
-      })
+      });
     }
   }
 

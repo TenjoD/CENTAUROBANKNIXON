@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { LanguageService } from '../../services/language.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-request-shipping',
@@ -15,7 +15,7 @@ export class RequestShippingComponent {
 
   constructor(private fb: FormBuilder,
     private snackbar: MatSnackBar,
-    public languageService: LanguageService
+    private translate: TranslateService
 
   )
    {
@@ -37,12 +37,14 @@ export class RequestShippingComponent {
 
   onSubmit() {
     if (this.solicitudForm.valid) {
-      this.snackbar.open('Formulario enviado con éxito, por favor revise su correo para validar el envio de este y este pendiente para la respuesta de su solicitud, siga las instrucciones que se le indican allí', 'Cerrar', {
+      const successMessage = this.translate.instant('FORM_SUBMIT_SUCCESS');
+      const closeButton = this.translate.instant('CLOSE');
+      
+      this.snackbar.open(successMessage, closeButton, {
         duration: 3000
-      })
+      });
     }
   }
-
   onCancel() {
     this.solicitudForm.reset();
   }

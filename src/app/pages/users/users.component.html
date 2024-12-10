@@ -1,7 +1,7 @@
 <div class="container">
     
     <div class="section">
-      <h3>Saldo Productos</h3>
+      <h3>{{ 'PRODUCT BALANCE' | translate }}</h3>
       <div class="row" *ngFor="let item of [1, 2, 3]">
         <span class="line"></span>
         <span class="price">$ ---------</span>
@@ -9,16 +9,16 @@
     </div>
   
     <div class="section">
-      <h3>Pagar Productos</h3>
+      <h3>{{ 'PAY PRODUCTS' | translate }}</h3>
       <div class="row" *ngFor="let item of [1, 2]">
         <span class="line"></span>
         <span class="price">$ ---------</span>
       </div>
-      <button class="btn-volver">Volver</button>
+      <button class="btn-volver">{{ 'BACK' | translate }}</button>
     </div>
   
     <div class="section wide">
-      <h3>Accesos Rápidos</h3>
+      <h3>{{ 'SHORTCUTS' | translate }}</h3>
       <div class="row" *ngFor="let item of [1, 2, 3, 4]">
         <span class="line"></span>
         <span class="line"></span>
@@ -26,7 +26,7 @@
     </div>
     
     <div class="section wide">
-      <h3>Alertas</h3>
+      <h3>{{ 'ALERTS' | translate }}</h3>
       <div class="row" *ngFor="let item of [1, 2]">
         <span class="line full-width"></span>
       </div>

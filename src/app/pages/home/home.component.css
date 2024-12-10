@@ -73,4 +73,10 @@ footer{
 
 .contain:hover{
     background-color: #929292;
+    cursor: pointer;
+}
+
+.f-comp:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }

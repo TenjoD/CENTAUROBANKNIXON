@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { LanguageService } from 'src/app/services/language.service';
+import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-contact-us',
@@ -8,5 +9,24 @@ import { LanguageService } from 'src/app/services/language.service';
     standalone: false
 })
 export class ContactUsComponent {
-    constructor(public languageService: LanguageService){}
+    constructor(private router : Router,
+      private translate: TranslateService
+    ){}
+
+    goHome() {
+        this.router.navigate(["home"]);
+      }
+
+    goContact() {
+     this.router.navigate(["contactUs"]);
+     }
+
+    goProducts() {
+    this.router.navigate(["products"]);
+     }
+
+     showAlert() {
+      const alertMessage = this.translate.instant('ALERT_IN_PRODUCTION');
+      alert(alertMessage);
+        }
 }

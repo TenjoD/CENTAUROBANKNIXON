@@ -1,16 +1,16 @@
 <div class="form-container">
-    <h1>Solicitud Productos</h1>
-    <p>Seleccione el producto que desea solicitar</p>
+    <h1>{{ 'PRODUCT REQUEST' | translate }}</h1>
+    <p>{{ 'SELECT PRODUCT' | translate }}</p>
     <select name="producto" class="form-select">
-      <option value="Tarjeta de Crédito">Tarjeta de Crédito</option>
-      <option value="Otro Producto">Otro Producto</option>
+      <option value="Tarjeta de Crédito">{{ 'CREDIT CARD' | translate }}</option>
+      <option value="Otro Producto">{{ 'OTHER PRODUCT' | translate }}</option>
     </select>
-    <p>Ingrese su información</p>
+    <p>{{ 'YOUR INFORMATION' | translate }}</p>
   
     <form [formGroup]="solicitudForm" (ngSubmit)="onSubmit()">
       <div class="form-row">
         <div class="form-column">
-          <label for="nombres">Nombres:</label>
+          <label for="nombres">{{ 'NAMES' | translate }}</label>
           <input
             id="nombres"
             type="text"
@@ -18,7 +18,7 @@
             placeholder="Ingrese sus nombres"
           />
   
-          <label for="correo">Correo Electrónico:</label>
+          <label for="correo">{{ 'MAIL' | translate }}</label>
           <input
             id="correo"
             type="email"
@@ -26,22 +26,22 @@
             placeholder="ejemplo@correo.com"
           />
           
-          <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+          <label for="fechaNacimiento">{{ 'DATE OF BIRTH' | translate }}</label>
           <input id="fechaNacimiento" type="date" formControlName="fechaNacimiento" />
   
-          <label for="fechaExpedicion">Fecha Expedición Documento:</label>
+          <label for="fechaExpedicion">{{ 'ISSUE DOCUMENT' | translate }}</label>
           <input id="fechaExpedicion" type="date" formControlName="fechaExpedicion" />
   
-          <label for="telefono">Teléfono:</label>
+          <label for="telefono">{{ 'PHONE USER' | translate }}</label>
           <input id="telefono" type="tel" formControlName="telefono" />
   
-          <label for="adjuntoId">Adjuntar Documento:</label>
+          <label for="adjuntoId">{{ 'ATTACJ DOCUMENTCC' | translate }}</label>
           <input id="adjuntoId" type="file" formControlName="adjuntoId" />
-          <p>*Solamente 1*</p>
+          <p>{{ 'ONLY 1' | translate }}</p>
         </div>
   
         <div class="form-column">
-          <label for="apellidos">Apellidos:</label>
+          <label for="apellidos">{{ 'LASTNAMES' | translate }}:</label>
           <input
             id="apellidos"
             type="text"
@@ -49,16 +49,16 @@
             placeholder="Ingrese sus apellidos"
           />
   
-          <label for="validacionCorreo">Validación Correo Electrónico:</label>
+          <label for="validacionCorreo">{{ 'EMAIL VALIDATION' | translate }}</label>
           <input id="validacionCorreo" type="email" formControlName="validacionCorreo" />
   
-          <label for="tipoDocumento">Tipo de Documento:</label>
+          <label for="tipoDocumento">{{ 'TYPE OF DOCUMENT' | translate }}</label>
           <select id="tipoDocumento" formControlName="tipoDocumento">
-            <option value="CC">Cédula de Ciudadanía</option>
-            <option value="CE">Cédula de Extranjería</option>
+            <option value="CC">{{ 'CITIZENSHIP CARD' | translate }}</option>
+            <option value="CE">{{ 'ALIEN REGISTRATION' | translate }}</option>
           </select>
   
-          <label for="numeroDocumento">Número de Documento:</label>
+          <label for="numeroDocumento">{{ 'DOCUMENT NUMBER' | translate }}</label>
           <input
             id="numeroDocumento"
             type="text"
@@ -66,18 +66,18 @@
             placeholder="Ingrese su documento"
           />
   
-          <label for="celular">Celular:</label>
+          <label for="celular">{{ 'CELL_PHONE' | translate }}</label>
           <input id="celular" type="tel" formControlName="celular" />
   
-          <label for="adjuntoEconomico">Adjuntar Documentos Económicos:</label>
+          <label for="adjuntoEconomico">{{ 'ATTACJ DOCUMENT ECONOMIC' | translate }}</label>
           <input id="adjuntoEconomico" type="file" formControlName="adjuntoEconomico" multiple />
-          <p>*Mínimo 1, máximo 5*</p>
+          <p>{{ 'MAX 5' | translate }}</p>
         </div>
       </div>
   
       <div class="form-buttons">
-        <button type="submit" [disabled]="solicitudForm.invalid">Enviar</button>
-        <button type="button" (click)="onCancel()">Cancelar</button>
+        <button type="submit" [disabled]="solicitudForm.invalid">{{ 'SUBMIT' | translate }}</button>
+        <button type="button" (click)="onCancel()">{{ 'CANCEL' | translate }}</button>
       </div>
     </form>
   </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-products',
@@ -7,46 +8,47 @@ import { Component } from '@angular/core';
     standalone: false
 })
 export class ProductsComponent {
+  constructor(private translate: TranslateService) {}
 
-    tarjetas = [
-        {
-          imagen: '../../../assets/images/blue.png',
-          alt: 'Tarjeta Azul',
-          titulo: 'Tarjeta Débito de Centauro Bank',
-          descripcion: 'Pagos más ágiles, seguros, cómodos y sin costos adicionales.'
-        },
-        {
-          imagen: '../../../assets/images/balck.png',
-          alt: 'Tarjeta Negra',
-          titulo: 'Tarjeta Black Débito de Centauro Bank',
-          descripcion: 'Practicidad en el pago y exclusividad para los usuarios de Centauro Bank.'
-        },
-        {
-          imagen: '../../../assets/images/green.png',
-          alt: 'Tarjeta Verde',
-          titulo: 'Tarjeta Débito de Centauro Bank con funcionalidad de Transporte',
-          descripcion: 'Con la Tarjeta Débito con funcionalidad de Transporte ingresas al transporte masivo.'
-        },
-        {
-          imagen: '../../../assets/images/gold.png',
-          alt: 'Tarjeta Dorada',
-          titulo: 'Tarjeta Débito de Centauro Bank',
-          descripcion: 'Esta tarjeta es para los menores de edad de 13-17 años para que aprendas y ahorres.'
-        },
-        {
-          imagen: '../../../assets/images/red.png',
-          alt: 'Tarjeta Roja',
-          titulo: 'Tarjeta Débito de Centauro Bank',
-          descripcion: 'Pagos más ágiles, seguros, cómodos y sin costos adicionales.'
-        },
-        {
-          imagen: '../../../assets/images/orange.png',
-          alt: 'Tarjeta Naranja',
-          titulo: 'Tarjeta Débito de Centauro Bank',
-          descripcion: 'Pagos más ágiles, seguros, cómodos y sin costos adicionales.'
-        }
-      ];
-    
+  tarjetas = [
+    {
+      imagen: '../../../assets/images/blue.png',
+      alt: this.translate.instant('TARJETA_AZUL'),
+      titulo: this.translate.instant('TARJETA_AZUL'),
+      descripcion: this.translate.instant('PAGOS_AGILES')
+    },
+    {
+      imagen: '../../../assets/images/balck.png',
+      alt: this.translate.instant('TARJETA_NEGRA'),
+      titulo: this.translate.instant('TARJETA_NEGRA'),
+      descripcion: this.translate.instant('PRAC_EXCLUSIVA')
+    },
+    {
+      imagen: '../../../assets/images/green.png',
+      alt: this.translate.instant('TARJETA_VERDE'),
+      titulo: this.translate.instant('TARJETA_VERDE'),
+      descripcion: this.translate.instant('FUNCIONALIDAD_TRANSPORTE')
+    },
+    {
+      imagen: '../../../assets/images/gold.png',
+      alt: this.translate.instant('TARJETA_DORADA'),
+      titulo: this.translate.instant('TARJETA_DORADA'),
+      descripcion: this.translate.instant('MENOR_EDAD')
+    },
+    {
+      imagen: '../../../assets/images/red.png',
+      alt: this.translate.instant('TARJETA_ROJA'),
+      titulo: this.translate.instant('TARJETA_ROJA'),
+      descripcion: this.translate.instant('PAGOS_AGILES')
+    },
+    {
+      imagen: '../../../assets/images/orange.png',
+      alt: this.translate.instant('TARJETA_NARANJA'),
+      titulo: this.translate.instant('TARJETA_NARANJA'),
+      descripcion: this.translate.instant('PAGOS_AGILES')
+    }
+  ];
+
       offset = 0; // Control de la posición inicial
       cardWidth = 250; // Ancho de cada tarjeta
       visibleCards = 5; // Cantidad de tarjetas visibles
@@ -60,5 +62,10 @@ export class ProductsComponent {
       // Método para retroceder
       prevSlide() {
         this.offset = Math.min(this.offset + this.cardWidth, 0);
+      }
+
+      showRequest() {
+        const alertMessage = this.translate.instant('ALERT_IN_REQUEST');
+        alert(alertMessage);
       }
 }

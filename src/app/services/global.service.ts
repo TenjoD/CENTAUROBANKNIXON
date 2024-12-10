@@ -8,11 +8,12 @@ export class GlobalService {
 
   constructor() {}
 
-  setGlobalVariable(value: string) {
-    this.globalVariable = value;
+  getGlobalVariable(): string {
+    return localStorage.getItem('user-status') || ''; // Retorna el estado del usuario
   }
 
-  getGlobalVariable(): string {
-    return this.globalVariable;
+  setGlobalVariable(value: string): void {
+    localStorage.setItem('user-status', value); // Guarda el estado del usuario
   }
+  
 }

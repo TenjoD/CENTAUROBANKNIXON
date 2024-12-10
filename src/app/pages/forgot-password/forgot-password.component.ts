@@ -15,8 +15,7 @@ export class ForgotPasswordComponent {
 
   constructor(private fb: FormBuilder, 
     private router: Router, 
-    private snackbar: MatSnackBar,
-    public languageService: LanguageService) {
+    private snackbar: MatSnackBar) {
     this.resetPasswordForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
     });
@@ -25,12 +24,12 @@ export class ForgotPasswordComponent {
   onSubmit(): void {
     if (this.resetPasswordForm.valid) {
       const email = this.resetPasswordForm.get('email')?.value;
-      this.snackbar.open('Correo envíado para restablecer su usuario', 'Cerrar', {
+      this.snackbar.open('Email sent to reset your password', 'Close', {
         duration: 3000
       });
-     
     }
   }
+  
 
   goBack(): void {
     this.router.navigate(['loginUser']); 

@@ -1,31 +1,31 @@
 <div class="container text-center">
-    <div class="title">Lista de Solicitudes</div>
+    <div class="title">{{ 'REQUESTS LIST' | translate }}</div>
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   
       <ng-container matColumnDef="usuario">
-        <th mat-header-cell *matHeaderCellDef> Usuario </th>
+        <th mat-header-cell *matHeaderCellDef> {{ 'USER' | translate }} </th>
         <td mat-cell *matCellDef="let element"> {{element.usuario}} </td>
       </ng-container>
   
       <ng-container matColumnDef="tipoDeSolicitud">
-        <th mat-header-cell *matHeaderCellDef> Tipo de Solicitud </th>
+        <th mat-header-cell *matHeaderCellDef> {{ 'TYPE OF REQUEST' | translate }} </th>
         <td mat-cell *matCellDef="let element"> {{element.tipoDeSolicitud}} </td>
       </ng-container>
   
       <ng-container matColumnDef="verSolicitud">
         <th mat-header-cell *matHeaderCellDef></th>
         <td mat-cell *matCellDef="let element">
-            <button mat-stroked-button>Ver solicitud</button>     
+            <button mat-stroked-button>{{ 'VIEW REQUEST' | translate }}</button>     
         </td>
       </ng-container>
   
       <ng-container matColumnDef="acciones">
-        <th mat-header-cell *matHeaderCellDef> Acciones </th>
+        <th mat-header-cell *matHeaderCellDef> {{ 'ACTIONS' | translate }} </th>
         <td mat-cell *matCellDef="let element">
           <div>
-            <button class="btn btn-success" (click)="actualizarSolicitud(element)">Aceptar</button>
+            <button class="btn btn-success" (click)="actualizarSolicitud(element)">{{ 'ACCEPT' | translate }}</button>
             <br>
-            <button class="btn btn-danger" (click)="eliminarSolicitud(element)">Eliminar</button>
+            <button class="btn btn-danger" (click)="eliminarSolicitud(element)">{{ 'DELETED' | translate }}</button>
           </div>  
         </td>
       </ng-container>

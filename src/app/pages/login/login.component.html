@@ -1,10 +1,10 @@
 <div>
     <div class="text-center">
-        <h1>Bienvenido</h1>
-        <h1>Selecciona tu rol</h1>
+        <h1>{{ 'WELCOME' | translate }}</h1>
+        <h1>{{ 'SELECT ROL' | translate }}</h1>
     </div>
     <div class="container-btn">
-        <button mat-flat-button color="primary" (click)="adminLogin()">Administrador</button>
-        <button mat-flat-button color="primary" (click)="userLogin()">Usuario</button>
+        <button mat-flat-button color="primary" (click)="adminLogin()">{{ 'ADMIN' | translate }}</button>
+        <button mat-flat-button color="primary" (click)="userLogin()">{{ 'USER' | translate }}</button>
     </div>
 </div>

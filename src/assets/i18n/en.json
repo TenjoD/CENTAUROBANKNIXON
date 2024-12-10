@@ -6,10 +6,10 @@
     "REQUEST_PRODUCTS": "Request Products",
     "MOVEMENTS": "Movements",
     "REQUEST_SHIPPING": "Request Shipping",
-    "MANAGE_PRODUCTS": "Manage<br>Products",
-    "MANAGE_USERS": "Manage<br>Users",
-    "REQUEST_LIST": "Request<br>List",
-    "CONTROL_PANEL": "Control<br>Panel",
+    "MANAGE_PRODUCTS": "Manage Products",
+    "MANAGE_USERS": "Manage Users",
+    "REQUEST_LIST": "Request List",
+    "CONTROL_PANEL": "Control Panel",
     "LOGIN": "Login",
     "LOGOUT": "Logout",
     "TITLE": "KNOW OUR PRODUCTS AND SAVE THE BEST WAY",
@@ -29,6 +29,164 @@
     "BANK_INFO": "Bank Information",
     "SERVICES": "Our Services",
     "BENEFITS": "Benefits",
-    "WORK_WITH_US": "Work With Us"
+    "WORK_WITH_US": "Work With Us",
+
+    "WELCOME TO": "WELCOME TO CONTACT US",
+    "CC COLINA": "Parque la Colina Shopping Center",
+    "CC CM": "Centro Mayor Shopping Mall",
+    "INVESTMENT": "CENTAURO investment",
+    "CDT": "CENTAURO CDT",
+    "CELL_PHONE": "Phones",
+
+    "WELCOME": "Welcome",
+    "SELECT ROL": "Select your role",
+    "ADMIN": "Administrator",
+    "USER": "User",
+
+    "ENTER": "ENTER",
+    "USER LOGIN": "USER",
+    "PASSWORD": "PASSWORD",
+    "FORGOT PASSWORD": "Forgot your password?",
+    "REGISTER": "Register",
+    
+    "ENTER EMAIL": "Enter your email",
+    "EMAIL": "Email",
+    "BACK": "Back",
+    
+    "CREDENTIALS INCORRECT": "Incorrect Username or Password",
+    "RETRY": "Retry",
+
+    "RESGISTRATION": "Resgistration",
+    "NAMES": "Names",
+    "LASTNAMES": "Lastnames",
+    "DATE OF BIRTH": "Date of Birth",
+    "DOCUMENT": "Docuemnt",
+    "ADDRESS": "Address",
+    "MAIL": "Mail",
+    "PASSWORDD": "Password",
+    "PHONE USER": "Telefono",
+
+    "PRODUCT BALANCE": "Product balance",
+    "SHORTCUTS": "Shortcuts",
+    "PAY PRODUCTS": "Pay products",
+    "ALERTS": "Alerts",
+
+    "PRODUCT REQUEST": "Product request",
+    "SELECT PRODUCT": "Select the product you wish to order",
+    "CREDIT CARD": "Credit Card",
+    "YOUR INFORMATION": "Enter your information",
+    "ISSUE DOCUMENT": "Date of issue of document",
+    "DOCUMENT NUMBER": "Document number",
+    "ATTACH DOCUMENT": "ATTACH DOCUMENT: * You must attach a PDF where you can see your ID document on both sides, make sure it is clear*",
+    "ATTACH ECONOMIC DOCUMENT": "ATTACH DOCUMENTS OF ECONOMIC RELATIONSHIP: * You must attach documents that support your application financially, make sure they are clear*",
+    "ONLY 1": "*Only 1*",
+    "MAX 5": "*Minimum 1, maximum 5*",
+    "SUBMIT": "Submit",
+    "CANCEL": "Cancel",
+
+    "SEND MESSAGE": "Form sent successfully, please check your email to validate the sending of this and be pending for the response of your request, follow the instructions indicated there.",
+
+    "SHIPPING REQUEST": "Shipping request",
+    "ALREADY ENABLED": "Select the product ALREADY ENABLED",
+    "SHIPPING INFO": "Enter your shipping information",
+    "FULL NAME": "Full name",
+    "WHO SHIPPING": "Who is receiving the shipment?",
+
+    "PRODUCT MANAGEMENT": "Product management",
+    "SELECT PROCESS": "Select the process you want to perform",
+    "PRODUCT NAME": "Product name",
+    "IMAGE": "Image",
+    "DESCRIPTION": "Description",
+    "ADVANTAGES": "Advantages",
+    "CREATE": "CREATE",
+    "EDIT": "EDIT",
+    "DELETE": "DELETE",
+    "ATTACH IMAGE": "Adjunte la imagen",
+
+    "USER ADMINISTRATION": "User administration",
+    "REQUESTS LIST": "List of requests",
+    "TOTAL CUSTOMERS": "Total customers",
+    "PRODUCTS MONTH": "Products per month",
+    "SELECT MONTH": "Select a month",
+
+    "ADD CARD": "Add a new Centauro Bank Card",
+    "ADD": "Add",
+    "PRODUCTS LIST": "Products list",
+
+    "TRANSACTION": "Transaction",
+    "DATE": "Date",
+    "AMOUNT": "Amount",
+    "PRODUCT DESTINATION": "Product Destination",
+
+  "TARJETA_AZUL": "Centauro Bank Debit Card",
+  "TARJETA_NEGRA": "Centauro Bank Black Debit Card",
+  "TARJETA_VERDE": "Centauro Bank Debit Card with Transport Functionality",
+  "TARJETA_DORADA": "Centauro Bank Debit Card for minors",
+  "TARJETA_ROJA": "Centauro Bank Debit Card",
+  "TARJETA_NARANJA": "Centauro Bank Debit Card",
+  "PAGOS_AGILES": "Faster, safer, more convenient payments with no additional costs.",
+  "PRAC_EXCLUSIVA": "Convenience in payments and exclusivity for Centauro Bank users.",
+  "FUNCIONALIDAD_TRANSPORTE": "With the Debit Card with Transport functionality, you can access mass transit.",
+  "MENOR_EDAD": "This card is for minors aged 13-17 to help you learn and save.",
+  "ALERT_PRODUCT_EDITED": "Product edited",
+  "ALERT_PRODUCT_DELETED": "Product deleted",
+  "ALERT_IN_PRODUCTION": "In production",
+
+  "TYPE OF REQUEST": "Type of request",
+  "VIEW REQUEST": "View Request",
+  "ACTIONS": "Actions",
+  "ACCEPT":"Accept",
+  "DELETED":"Delete",
+  "UPDATE":"Update",
+
+  "OTHER PRODUCT":"Other Product",
+  "ATTACH DOCUMENTCC":"Attach Document",
+  "EMAIL VALIDATION":"Email Validation",
+  "TYPE OF DOCUMENT":"Type of Document",
+  "CITIZENSHIP CARD":"Citizenship Card",
+  "ALIEN REGISTRATION":"Alien Registration Card",
+  "ATTACH DOCUMENT ECONOMIC":"Attach Economic Documents",
+
+  "FORM_SUBMIT_SUCCESS": "Form submitted successfully, please check your email to validate the submission and stay tuned for the response to your request. Follow the instructions provided there.",
+  "CLOSE": "Close",
+
+  "MONTHS": [
+    "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+  ],
+  "BAR_CHART_LABELS": [
+    "Centauro Bank Debit Card", 
+    "Centauro Bank Black Debit Card", 
+    "Centauro Bank Debit Card with Transportation Functionality", 
+    "Centauro Bank Debit Card", 
+    "Centauro Bank Debit Card", 
+    "Centauro Bank Debit Card"
+  ],
+  "CLIENTS": "Clients",
+  "AMOUNT_OF_CLIENTS": "Amount of Clients",
+  "EMAIL_SENT": "Email sent to reset your password",
+
+  "SNACKBAR": {
+    "ENTER_USERNAME_PASSWORD": "Please enter a username and password to continue.",
+    "ENTER_USERNAME": "Please enter your username.",
+    "ENTER_PASSWORD": "Please enter your password.",
+    "LOGIN_SUCCESSFUL": "Login successful."
+  },
+
+  "FORM_SUBMITTED": "Form submitted successfully, please check your email to validate the submission and be on the lookout for the response to your request, follow the instructions provided there.",
+
+  "UPDATE_REQUEST": "Update request for user {user}",
+    "DELETE_REQUEST": "Request for user {user} deleted",
+    "USER_REGISTERED": "User Registered",
+    "PLEASE_COMPLETE_FIELDS": "Please fill out all fields correctly.",
+     "ALERT_IN_REQUEST": "You must log in to purchase this product",
+
+  "LOG": {
+    "PRODUCT_CREATED": "Product created:",
+    "EDIT_PRODUCT": "Edit product:",
+    "PRODUCT_DELETED": "Product deleted",
+    "CANCEL_ACTION": "Action canceled",
+    "FILE_SELECTED": "File selected:"
+
   }
+}
   
