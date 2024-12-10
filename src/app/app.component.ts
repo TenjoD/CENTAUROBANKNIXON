@@ -10,6 +10,7 @@ import { LanguageService } from './services/language.service';
   standalone: false
 })
 export class AppComponent {
+
   title = 'centauro';
 
   constructor(
@@ -17,6 +18,10 @@ export class AppComponent {
     private router: Router,
     public languageService: LanguageService
   ) { }
+
+  goAdminProducts() {
+    this.router.navigate(['adminProducts'])
+    }
 
   goRequestShipping() {
     this.router.navigate(["requestShipping"]);

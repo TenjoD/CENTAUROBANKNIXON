@@ -19,6 +19,7 @@ import { RequestListComponent } from './pages/request-list/request-list.componen
 import { ProductsComponent } from './pages/products/products.component';
 import { ControlPanelComponent } from './pages/control-panel/control-panel.component';
 import { RequestShippingComponent } from './pages/request-shipping/request-shipping.component';
+import { AdminProductsComponent } from './pages/admin-products/admin-products.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { RequestShippingComponent } from './pages/request-shipping/request-shipp
     RequestListComponent,
     ProductsComponent,
     ControlPanelComponent,
-    RequestShippingComponent
+    RequestShippingComponent,
+    AdminProductsComponent
   ],
   imports: [
     BrowserModule,

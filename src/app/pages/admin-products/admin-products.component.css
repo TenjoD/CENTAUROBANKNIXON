@@ -109,6 +109,39 @@ h1{
     right: 20px;
 }
 
+/* Botones del carrusel */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 123, 255, 0.8); /* Azul */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 123, 255, 1); /* Azul más fuerte */
+}
+
+.carousel-button.left {
+    left: 20px;
+}
+
+.carousel-button.right {
+    right: 20px;
+}
+
 /* Botón editar: Azul */
 .edit-button {
     background-color: #007bff; /* Azul */
@@ -138,6 +171,7 @@ h1{
 .delete-button:hover {
     background-color: #c82333; /* Rojo más oscuro */
 }
+
 
 /* Responsividad */
 @media (max-width: 768px) {
