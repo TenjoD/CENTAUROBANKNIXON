@@ -1,0 +1,84 @@
+<div class="form-container">
+    <h1>Solicitud Productos</h1>
+    <p>Seleccione el producto que desea solicitar</p>
+    <select name="producto" class="form-select">
+      <option value="Tarjeta de Crédito">Tarjeta de Crédito</option>
+      <option value="Otro Producto">Otro Producto</option>
+    </select>
+    <p>Ingrese su información</p>
+  
+    <form [formGroup]="solicitudForm" (ngSubmit)="onSubmit()">
+      <div class="form-row">
+        <div class="form-column">
+          <label for="nombres">Nombres:</label>
+          <input
+            id="nombres"
+            type="text"
+            formControlName="nombres"
+            placeholder="Ingrese sus nombres"
+          />
+  
+          <label for="correo">Correo Electrónico:</label>
+          <input
+            id="correo"
+            type="email"
+            formControlName="correo"
+            placeholder="ejemplo@correo.com"
+          />
+          
+          <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+          <input id="fechaNacimiento" type="date" formControlName="fechaNacimiento" />
+  
+          <label for="fechaExpedicion">Fecha Expedición Documento:</label>
+          <input id="fechaExpedicion" type="date" formControlName="fechaExpedicion" />
+  
+          <label for="telefono">Teléfono:</label>
+          <input id="telefono" type="tel" formControlName="telefono" />
+  
+          <label for="adjuntoId">Adjuntar Documento:</label>
+          <input id="adjuntoId" type="file" formControlName="adjuntoId" />
+          <p>*Solamente 1*</p>
+        </div>
+  
+        <div class="form-column">
+          <label for="apellidos">Apellidos:</label>
+          <input
+            id="apellidos"
+            type="text"
+            formControlName="apellidos"
+            placeholder="Ingrese sus apellidos"
+          />
+  
+          <label for="validacionCorreo">Validación Correo Electrónico:</label>
+          <input id="validacionCorreo" type="email" formControlName="validacionCorreo" />
+  
+          <label for="tipoDocumento">Tipo de Documento:</label>
+          <select id="tipoDocumento" formControlName="tipoDocumento">
+            <option value="CC">Cédula de Ciudadanía</option>
+            <option value="CE">Cédula de Extranjería</option>
+          </select>
+  
+          <label for="numeroDocumento">Número de Documento:</label>
+          <input
+            id="numeroDocumento"
+            type="text"
+            formControlName="numeroDocumento"
+            placeholder="Ingrese su documento"
+          />
+  
+          <label for="celular">Celular:</label>
+          <input id="celular" type="tel" formControlName="celular" />
+  
+          <label for="adjuntoEconomico">Adjuntar Documentos Económicos:</label>
+          <input id="adjuntoEconomico" type="file" formControlName="adjuntoEconomico" multiple />
+          <p>*Mínimo 1, máximo 5*</p>
+        </div>
+      </div>
+  
+      <div class="form-buttons">
+        <button type="submit" [disabled]="solicitudForm.invalid">Enviar</button>
+        <button type="button" (click)="onCancel()">Cancelar</button>
+      </div>
+    </form>
+  </div>
+  

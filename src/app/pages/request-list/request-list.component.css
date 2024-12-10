@@ -1,0 +1,21 @@
+.title{
+    font-weight: 600;
+    font-size: 4em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    color: #1C4971;
+}
+
+td, th {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+.mat-sort-header-container {
+    justify-content: center !important;
+}
+
+.btn-container{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}

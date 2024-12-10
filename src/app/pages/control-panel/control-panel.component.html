@@ -1,0 +1,16 @@
+<div class="graficas">
+<div class="pastel">
+    <h1>Clientes totales</h1>
+    <canvas id="pieChart"></canvas>
+  </div>
+  <div class="barras">
+    <h1>Productos por mes</h1>
+    <canvas id="barChartCanvas" width="400" height="300"></canvas>
+    <label for="month">Selecciona un mes:</label>
+    <select id="month" [(ngModel)]="selectedMonth" (change)="updateChartData()">
+    <option *ngFor="let month of months" [value]="month">{{ month }}</option> 
+    </select>
+  </div>
+  
+</div>
+  

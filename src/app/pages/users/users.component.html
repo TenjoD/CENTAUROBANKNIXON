@@ -1,0 +1,35 @@
+<div class="container">
+    
+    <div class="section">
+      <h3>Saldo Productos</h3>
+      <div class="row" *ngFor="let item of [1, 2, 3]">
+        <span class="line"></span>
+        <span class="price">$ ---------</span>
+      </div>
+    </div>
+  
+    <div class="section">
+      <h3>Pagar Productos</h3>
+      <div class="row" *ngFor="let item of [1, 2]">
+        <span class="line"></span>
+        <span class="price">$ ---------</span>
+      </div>
+      <button class="btn-volver">Volver</button>
+    </div>
+  
+    <div class="section wide">
+      <h3>Accesos Rápidos</h3>
+      <div class="row" *ngFor="let item of [1, 2, 3, 4]">
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    
+    <div class="section wide">
+      <h3>Alertas</h3>
+      <div class="row" *ngFor="let item of [1, 2]">
+        <span class="line full-width"></span>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,42 @@
+.img-container{
+    background-image: url(../../../assets/images/imageContact.jpg);
+    width: auto;
+    height: 25em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1{
+        padding: 2em;
+    }
+}
+
+.contact-container{
+    margin: 3em;
+    margin-bottom: 5em;
+}
+
+.body-container{
+    margin-top: 2em;
+}
+
+.other{
+    font-weight: 500;
+    color: #40403A;
+}
+
+footer{
+    background-color: #40403A;
+}
+
+.f-title{
+    color: #929292;
+    font-weight: 600;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1.2em;
+}
+
+.f-comp{
+    margin-bottom: 2em;
+    font-weight: 500;
+    color: white;
+}

@@ -1,0 +1,68 @@
+
+.container {
+    display: grid;
+    grid-template-areas:
+      "saldo accesos"
+      "pagar alertas";
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    background-color: #e0e0e0;
+    padding: 20px;
+  }
+  
+
+  .section {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wide {
+    grid-column: span 2;
+  }
+  
+  h3 {
+    margin: 0 0 15px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+
+  .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .line {
+    flex: 1;
+    height: 2px;
+    background-color: black;
+  }
+  
+  .price {
+    margin-left: 10px;
+    color: #555;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+
+  .btn-volver {
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #48c9b0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-volver:hover {
+    background-color: #1abc9c;
+  }
+  
+  

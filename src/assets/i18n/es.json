@@ -1,0 +1,15 @@
+{
+  "HOME": "Inicio",
+  "PRODUCTS": "Productos",
+  "CONTACT_US": "Contáctanos",
+  "USER_HOME": "Inicio Usuario",
+  "REQUEST_PRODUCTS": "Solicitud de Productos",
+  "MOVEMENTS": "Movimientos",
+  "REQUEST_SHIPPING": "Solicitud de Envío",
+  "MANAGE_PRODUCTS": "Administración<br>Productos",
+  "MANAGE_USERS": "Administración<br>Usuarios",
+  "REQUEST_LIST": "Lista de<br>Solicitudes",
+  "CONTROL_PANEL": "Panel de<br>Control",
+  "LOGIN": "Entrar",
+  "LOGOUT": "Salir"
+}

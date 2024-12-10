@@ -1,0 +1,38 @@
+<div class="container text-center">
+    <div class="title">Lista de Solicitudes</div>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  
+      <ng-container matColumnDef="usuario">
+        <th mat-header-cell *matHeaderCellDef> Usuario </th>
+        <td mat-cell *matCellDef="let element"> {{element.usuario}} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="tipoDeSolicitud">
+        <th mat-header-cell *matHeaderCellDef> Tipo de Solicitud </th>
+        <td mat-cell *matCellDef="let element"> {{element.tipoDeSolicitud}} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="verSolicitud">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element">
+            <button mat-stroked-button>Ver solicitud</button>     
+        </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="acciones">
+        <th mat-header-cell *matHeaderCellDef> Acciones </th>
+        <td mat-cell *matCellDef="let element">
+          <div>
+            <button class="btn btn-success" (click)="actualizarSolicitud(element)">Aceptar</button>
+            <br>
+            <button class="btn btn-danger" (click)="eliminarSolicitud(element)">Eliminar</button>
+          </div>  
+        </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator [length]="dataSource.data.length" [pageSize]="5" [pageSizeOptions]="[5, 10, 20]"></mat-paginator>
+  </div>
+  

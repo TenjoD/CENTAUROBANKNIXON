@@ -1,0 +1,92 @@
+.container {
+    background-color: #d3d8dc;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #375a7f;
+  }
+  
+  p {
+    text-align: center;
+    color: #6c757d;
+  }
+  
+  select {
+    display: block;
+    width: 100%;
+    margin: 10px auto 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type='text'],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  textarea {
+    resize: none;
+    height: 80px;
+  }
+  
+  input[type='file'] {
+    margin-top: 10px;
+  }
+  
+  span {
+    font-size: 12px;
+    color: #6c757d;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+  }
+  .btn-cancel {
+    background-color: #ee9802;
+  }
+  .btn-create {
+    background-color: #4caf50;
+  }
+  
+  .btn-edit {
+    background-color: #17a2b8;
+  }
+  
+  .btn-delete {
+    background-color: #dc3545;
+  }
+  
+  

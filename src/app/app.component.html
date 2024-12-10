@@ -1,0 +1,45 @@
+<div class="header">
+    <div class="row">
+        <div class="col-3">
+            <div class="logo">
+                <div class="image-container">
+                    <img src="../../../assets/images/logo.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col menu-h">
+            <div>
+                <mat-toolbar color="transparent" class="custom-toolbar">
+                    <mat-toolbar-row>
+                        <nav *ngIf="!adminLoged() && !userLoged()">
+                            <a mat-button (click)="goHome()">Inicio</a>
+                            <a mat-button (click)="goProducts()">Productos</a>
+                            <a mat-button (click)="goContact()">Contactanos</a>
+                        </nav>
+                        <nav *ngIf="userLoged()">
+                            <a mat-button (click)="goUser()">Inicio</a>
+                            <a mat-button (click)="goRequest()">Solicitud Productos</a> 
+                            <a mat-button (click)="goMovements()">Movimientos</a>
+                            <a mat-button (click)="goRequestShipping()">Solicitud de Envio</a>
+                        </nav>
+                        <nav *ngIf="adminLoged()">
+                            <a mat-button (click)="goHome()">Inicio</a>
+                            <a mat-button class="text-center" (click)="goManage()">Administración<br>Productos</a>
+                            <a mat-button class="text-center" (click)="goManageUsers()">Administración<br>Usuarios</a>
+                            <a mat-button class="text-center" (click)="goRequests()">Lista de<br>Solicitudes</a>
+                            <a mat-button class="text-center" (click)="goControlPanel()">Panel de Control</a>
+
+                        </nav>
+                    </mat-toolbar-row>
+                </mat-toolbar>
+            </div>
+        </div>
+        <div *ngIf="!adminLoged() && !userLoged()" class="col-3 menu-h">
+            <button class="btn btn-success" (click)="goLogin()">Entrar</button>
+        </div>
+        <div *ngIf="adminLoged() || userLoged()" class="col-3 menu-h">
+            <button class="btn btn-success" (click)="logOut()">Salir</button>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,57 @@
+<div class="form-container">
+    <h1>Solicitud de envio</h1>
+    <p>Seleccione el producto YA HABILITADO </p>
+    <br>
+    <select name="producto" class="form-select">
+      <option value="Tarjeta de Crédito">----------</option>
+      <option value="Otro Producto">Tarjeta de Crédito</option>
+    </select>
+    <br>
+    <p>Ingrese su información de envio:</p>
+  
+    <form [formGroup]="solicitudForm" (ngSubmit)="onSubmit()">
+      <div class="form-row">
+        <div class="form-column">
+          <label for="nombres">Nombre Completo:</label>
+          <input
+            id="nombres"
+            type="text"
+            formControlName="nombres"
+            placeholder="Ingrese sus nombres"
+          />
+  
+          <label for="correo">Correo Electrónico:</label>
+          <input
+            id="correo"
+            type="email"
+            formControlName="correo"
+            placeholder="ejemplo@correo.com"
+          />
+          <label for="nombreEnvio">¿Quién recibe el envio?</label>
+          <input id="nombreEnvio" type="text" formControlName="nombreEnvio" multiple />
+  
+        </div>
+  
+        <div class="form-column">
+
+          <label for="documento">Numero de documento:</label>
+          <input id="docuemnto" type="number" formControlName="documento" />
+  
+          
+  
+          <label for="celular">Celular:</label>
+          <input id="celular" type="tel" formControlName="celular" />
+  
+          <label for="direccion">Dirección</label>
+          <input id="direccion" type="text" formControlName="direccion" multiple />
+          <br>
+        </div>
+      </div>
+  
+      <div class="form-buttons">
+        <button type="submit" [disabled]="solicitudForm.invalid">Enviar</button>
+        <button type="button" (click)="onCancel()">Cancelar</button>
+      </div>
+    </form>
+  </div>
+  

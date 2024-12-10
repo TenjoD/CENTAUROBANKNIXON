@@ -1,0 +1,21 @@
+.graficas {
+    display: flex; /* Usamos flexbox para alinear los gráficos uno al lado del otro */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: flex-start; /* Alinea los elementos al principio del contenedor */
+    width: 100%;
+  }
+  
+  .pastel, .barras {
+    width: 45%; /* Establece un 45% del ancho para cada gráfico */
+    margin: 1%; /* Añade margen entre los elementos */
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 2%;
+  }
+  
+  select {
+    width: 100%; /* Asegura que el select ocupe todo el ancho disponible */
+  }
+  
