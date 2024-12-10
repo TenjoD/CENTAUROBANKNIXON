@@ -19,6 +19,13 @@ import { RequestListComponent } from './pages/request-list/request-list.componen
 import { ProductsComponent } from './pages/products/products.component';
 import { ControlPanelComponent } from './pages/control-panel/control-panel.component';
 import { RequestShippingComponent } from './pages/request-shipping/request-shipping.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -45,6 +52,14 @@ import { RequestShippingComponent } from './pages/request-shipping/request-shipp
     ReactiveFormsModule,
     FormsModule,
     MaterialModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

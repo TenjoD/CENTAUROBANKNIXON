@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GlobalService } from './services/global.service';
 import { Router } from '@angular/router';
 import { LanguageService } from './services/language.service';
+import { TranslateService } from '@ngx-translate/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-root',
@@ -9,14 +11,40 @@ import { LanguageService } from './services/language.service';
   styleUrls: ['./app.component.css'],
   standalone: false
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'centauro';
 
   constructor(
     public globalService: GlobalService,
     private router: Router,
-    public languageService: LanguageService
-  ) { }
+    private translate: TranslateService,
+    private snackbar: MatSnackBar
+  ) {
+    this.translate.setDefaultLang('es');
+    this.translate.use('es');
+  }
+
+  ngOnInit(): void {
+    if(this.translate.currentLang == 'es'){
+      const snack = this.snackbar.open('Do you want to translate this page?', 'Yes', {
+        duration: 5000
+      });
+      snack.onAction().subscribe(() => {
+        this.changeLanguage('en')
+      })
+    } else {
+      const snack = this.snackbar.open('Do you want to translate this page?', 'Yes', {
+        duration: 5000
+      });
+      snack.onAction().subscribe(() => {
+        this.changeLanguage('es')
+      })
+    }
+  }
+
+  changeLanguage(lang: string){
+    this.translate.use(lang)
+  }
 
   goRequestShipping() {
     this.router.navigate(["requestShipping"]);

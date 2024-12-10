@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LanguageService } from 'src/app/services/language.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-home',
@@ -8,5 +8,7 @@ import { LanguageService } from 'src/app/services/language.service';
     standalone: false
 })
 export class HomeComponent {
-    constructor(public languageService: LanguageService){}
+    constructor(
+    ){
+    }
 }
